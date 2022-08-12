@@ -6,6 +6,5 @@ import '../app/stylesheets/style.css'
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
     <App />
-    <h1>asdasd</h1>
   </React.StrictMode>
 )
