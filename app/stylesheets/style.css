@@ -1,8 +1,8 @@
 :root {
   --text: #222222;
-  /* --color2: white;
-  --logo: url("");
-  --logo_alt: url(""); */
+  /* --color2: white; */
+  --sultan: url("app/assets/sultan.jpeg");
+  /* --logo_alt: url(""); */
 }
 
 body {
@@ -13,9 +13,9 @@ body {
 
 .nav {
   /* width: 100%; */
-  padding-left: 30px;
-  display: flex;
   height: 70px;
+  display: flex;
+  padding-left: 30px;
   box-shadow: 0 3px 7.5px rgba(0, 0, 0, 0.1);
 }
 
@@ -26,21 +26,44 @@ body {
 .hero-wrapper {
   display: flex;
   flex-direction: column;
-  padding: 4%;
-
 }
 
-.hero-wrapper img {
-  margin: 0 auto;
-  width: 400px;
+.hero-img {
+  max-width: 400px;
+  align-self: center;
 }
 
 .hero-header {
-font-size: 36px;
+  font-size: 36px;
 }
 
 .hero-copy {
   width: 320px;
   font-size: 16px;
   line-height: 110%;
+}
+
+section {
+  padding: 20px;
+}
+
+.card {
+  font-size: 13px;
+  border-radius: 15px;
+  width: 200px;
+  margin: 32px;
+  /* background-color: #222222; */
+  /* background-image: var(--sultan); */
+  object-fit:cover;
+  box-shadow: 0 3px 7.5px rgba(0, 0, 0, 0.1);
+}
+
+.card > img {
+  width: 100%;
+  border-top-left-radius: inherit;
+  border-top-right-radius: inherit;
+}
+
+.card-text-wrapper {
+  padding: 8px 16px;
 }
