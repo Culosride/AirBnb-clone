@@ -1,7 +1,7 @@
-export default function Navbar() {
+export default function Navbar(props) {
   return (
     <nav className="nav">
-      <img src="app/assets/airbnb_logo.svg" alt="airbnb_logo" />
+      <img src={props.logo} alt={props.alt} />
     </nav>
   )
 }

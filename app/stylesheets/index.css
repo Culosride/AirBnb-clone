@@ -1,0 +1,21 @@
+@import "cards.css";
+@import "nav.css";
+@import "hero.css";
+
+:root {
+  --text: #222222;
+  /* --color2: white; */
+  --sultan: url("app/assets/sultan.jpeg");
+  /* --logo_alt: url(""); */
+  --card-padding-sides: 16px;
+}
+
+body {
+  font-family: 'Poppins';
+  margin: 0;
+  color: var(--text);
+}
+
+section {
+  padding: 20px;
+}

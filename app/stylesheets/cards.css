@@ -1,0 +1,41 @@
+.cards {
+  display: flex;
+}
+
+.card {
+  font-size: 13px;
+  border-radius: 15px;
+  width: 200px;
+  height: 300px;
+  margin: 32px;
+  box-shadow: 0 3px 7.5px rgba(0, 0, 0, 0.1);
+  position: relative;
+}
+
+.card > img {
+  object-fit:cover;
+  height: 133px;
+  width: 100%;
+  border-top-left-radius: inherit;
+  border-top-right-radius: inherit;
+}
+
+.card-text-wrapper {
+  padding: 8px var(--card-padding-sides);
+}
+
+
+.card-price {
+  position: absolute;
+  bottom: 10px;
+  left: var(--card-padding-sides);
+}
+
+.card-rating {
+  font-size: 11px;
+  color: grey;
+}
+
+.card-desc {
+  font-size: 14px;
+}
