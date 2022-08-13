@@ -7,22 +7,15 @@ import experiences from './fake apis/experiences.js'
 export default function App() {
   const cards = experiences.map(ex => <Card
     key = {ex.id}
-    img={ex.img}
-    spots={ex.spots}
-    rating={ex.rating}
-    reviews={ex.reviews}
-    place={ex.place}
-    desc={ex.desc}
-    price={ex.price}
-    alt={ex.alt}
-  />)
+    {...ex}
+    />)
 
-  return (
+    return (
     <div className=''>
       <Navbar
         logo="app/assets/airbnb_logo.svg"
         alt="airbnb-logo"
-      />
+        />
       <Hero />
       <section className="cards">
         {cards}
@@ -30,3 +23,13 @@ export default function App() {
     </div>
   )
 }
+
+        // key = {ex.id}
+        // img={ex.img}
+        // spots={ex.spots}
+        // rating={ex.rating}
+        // reviews={ex.reviews}
+        // place={ex.place}
+        // desc={ex.desc}
+        // price={ex.price}
+        // alt={ex.alt}
