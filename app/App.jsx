@@ -8,7 +8,20 @@ export default function App() {
     <div className=''>
       <Navbar />
       <Hero />
-      <Card />
+      <div className="cards">
+        <Card
+          img="app/assets/nana_turtle.jpg"
+          rating="⭐ 5.0 (6) • Guantanamo"
+          desc="Dinner with Nana Turtle"
+          price="From $136 / person"
+        />
+        <Card
+          img="app/assets/sultan.jpeg"
+          rating="⭐ 5.0 (6) • Pakistan"
+          desc="Life lessons with angry Sultan"
+          price="From $136 / person"
+        />
+      </div>
     </div>
   )
 }

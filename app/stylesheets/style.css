@@ -3,6 +3,7 @@
   /* --color2: white; */
   --sultan: url("app/assets/sultan.jpeg");
   /* --logo_alt: url(""); */
+  --card-padding-sides: 16px;
 }
 
 body {
@@ -51,19 +52,30 @@ section {
   font-size: 13px;
   border-radius: 15px;
   width: 200px;
+  height: 300px;
   margin: 32px;
-  /* background-color: #222222; */
-  /* background-image: var(--sultan); */
-  object-fit:cover;
   box-shadow: 0 3px 7.5px rgba(0, 0, 0, 0.1);
+  position: relative;
 }
 
 .card > img {
+  object-fit:cover;
+  height: 133px;
   width: 100%;
   border-top-left-radius: inherit;
   border-top-right-radius: inherit;
 }
 
 .card-text-wrapper {
-  padding: 8px 16px;
+  padding: 8px var(--card-padding-sides);
+}
+
+.cards {
+  display: flex;
+}
+
+.card-price {
+  position: absolute;
+  bottom: 10px;
+  left: var(--card-padding-sides);
 }

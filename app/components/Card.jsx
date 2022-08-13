@@ -1,12 +1,12 @@
-export default function Card() {
+export default function Card(props) {
   return (
     <div className="card">
-      <img className="hero-img" src="app/assets/sultan.jpeg" alt="sultan" />
+      <img className="card-img" src={props.img} alt="" />
       <div className="card-text-wrapper">
-        <p className="">⭐ 5.0 (6) • Pakistan</p>
-        <p>Life lessons with angry Sultan</p>
-        <p><strong>From $136</strong> / person</p>
+        <p className="">{props.rating}</p>
+        <p>{props.desc}</p>
       </div>
+      <p className="card-price">{props.price}</p>
     </div>
   )
 }
