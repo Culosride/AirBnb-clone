@@ -1,7 +1,7 @@
 export default function Card(props) {
   return (
     <div className="card">
-      <div className={props.spots===0 && "card-openSpots-red" || props.spots > 0 && "card-openSpots" }>{props.spots === 0 && "SOLD OUT" || props.spots > 0 && "OPEN SPOTS: " + props.spots}</div>
+      <div className={props.spots===0 && "card-openSpots-red" || props.spots > 0 && "card-openSpots" }>{props.spots === 0 && "SOLD OUT !" || props.spots > 0 && "OPEN SPOTS: " + props.spots}</div>
       <img className="card-img" src={props.img} alt={props.alt} />
       <div className="card-text-wrapper">
         <p className="card-rating">⭐ {props.rating} ({props.reviews}) • {props.place}</p>

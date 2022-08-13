@@ -8,6 +8,7 @@
   --sultan: url("app/assets/sultan.jpeg");
   /* --logo_alt: url(""); */
   --card-padding-sides: 16px;
+  --slots-padding: 4px 6px;
 }
 
 body {

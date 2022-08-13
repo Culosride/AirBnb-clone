@@ -13,7 +13,7 @@ export default [
 
   {
     id: 2,
-    spots: 27,
+    spots: 0,
     img: "app/assets/sultan.jpeg",
     rating: 4.8,
     reviews: 29,
@@ -25,7 +25,7 @@ export default [
 
   {
     id: 3,
-    spots: 0,
+    spots: 4,
     img: "app/assets/trash.jpeg",
     rating: 5.0,
     reviews: 346,
