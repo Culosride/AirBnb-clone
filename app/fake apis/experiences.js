@@ -26,12 +26,12 @@ export default [
   {
     id: 3,
     spots: 0,
-    img: "app/assets/sultan.jpeg",
+    img: "app/assets/trash.jpeg",
     rating: 5.0,
     reviews: 346,
     place: "The bin",
-    desc: "Life lessons with angry Sultan",
+    desc: "Dive and swim in accommodating bin",
     price: 953,
-    alt: "sultan"
+    alt: "bin"
   }
 ]
